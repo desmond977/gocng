@@ -1,0 +1,119 @@
+
+.centered-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    width: 600px;
+    height: 500px;
+    border-style: solid;
+    border-color: #1bb26b47;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+
+.img-fluid{
+    padding-bottom: 20px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary{
+margin-top: 10px;
+padding: 7px;
+width: 180px;
+border-style: hidden;
+background-color: #1BB26B;
+color: #fff;
+}
+
+.btn-primarycredit{
+    width: 300px;
+    margin-top: 10px;
+padding: 7px;
+border-style: hidden;
+background-color: #1BB26B;
+color: #fff;
+}
+
+.form-control{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1bb26b47;
+    /* padding-top: 15px; */
+}
+
+.centered-wrapperformpage{
+    width: 900px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.containerformpage{
+    display: flex;
+    justify-content: center;
+}
+
+.fulltext{
+    display: block;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.fourcylinder {
+    display: none;
+    font-size: 25px;
+}
+
+.fivecylinder {
+    display: flex;
+    font-size: 25px;
+}
+.notetext{
+    margin-top: 60px;
+    max-width: 700px;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.note{
+    width: 500px;
+    height: 40px;
+    margin-left: 0px
+}
+
+.notetext h3{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+
+.eligtext h3 {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.elitextsreslt{
+    display: block;
+
+}
+
+.lableresult{
+    display: flex;
+    font-size: 14px;
+    margin-top: 5px;
+}
