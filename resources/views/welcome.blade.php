@@ -10,6 +10,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('style.css') }}">
@@ -19,8 +20,26 @@
 
 <body class="antialiased">
 
+    @if(session('alert'))
+<script>
+    Swal.fire({
+        icon: 'info',
+        title: 'Notice',
+        text: '{{ session('alert') }}',
+        confirmButtonText: 'OK'
+    });
+</script>
+@endif
+
+    @if (session('success'))
+    <div class="alert alert-success">{{ session('success') }}</div>
+@endif
+@if (session('error'))
+    <div class="alert alert-danger">{{ session('error') }}</div>
+@endif
+
     <div class="container mt-5">
-        <div class="centered-wrapper">
+        <div class="centered-wrapper" style="height: 450px; margin-top: -90px;">
         <!-- Image Section -->
         <div class="text-center mb-4">
             <img src="{{ asset('gocng-logo.png') }}" alt="Search Image" class="img-fluid" style="max-width: 230px;">

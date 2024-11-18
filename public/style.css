@@ -1,19 +1,22 @@
 
 .centered-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center;
-    flex-direction: column;
-    width: 600px;
-    height: 500px;
-    border-style: solid;
-    border-color: #1bb26b47;
-    border-width: 1px;
+    width: 90%; /* Make it responsive by using percentage */
+    max-width: 600px; /* Ensure it doesn’t exceed 600px */
+    padding: 20px; /* Add some internal padding */
+    margin: 0 auto; /* Center it horizontally on the page */
+    height: auto; /* Allow height to adjust based on content */
+    border: 1px solid rgba(27, 178, 107, 0.28); /* Use RGBA for border color */
     border-radius: 5px;
     background-color: #f1f1f1;
+    box-sizing: border-box; /* Include padding and border in width and height */
+    overflow: hidden; /* Hide any overflowing content */
+    text-align: center;
 }
+
 
 
 .img-fluid{
@@ -21,13 +24,13 @@
 }
 
 
-.container{
+.container {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
-    display: flex;
     align-items: center;
+    height: 100vh; /* Full viewport height */
 }
+
 
 .btn-primary{
 margin-top: 10px;

@@ -11,6 +11,7 @@ class Used extends Authenticatable
 
     // Define fillable properties that correspond to the fields in $userData
     protected $fillable = [
+        'id',
         'salutation',
         'first_name',
         'last_name',
